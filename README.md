@@ -56,8 +56,8 @@ pyinstaller PhotonDescent.spec
 ```text
 photon_descent.py              # Thin entrypoint
 photon_descent_game/           # Core game package
+assets/                        # Music and icon assets
 PhotonDescent.spec             # PyInstaller build spec
-*.mp3 / game.ico               # Runtime assets
 ```
 
 ## Notes

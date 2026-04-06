@@ -5,7 +5,13 @@ a = Analysis(
     ['photon_descent.py'],
     pathex=[],
     binaries=[],
-    datas=[('title_ambient.mp3', '.'), ('light_phase.mp3', '.'), ('gravity_phase.mp3', '.'), ('hyper_phase.mp3', '.'), ('mirror_phase.mp3', '.')],
+    datas=[
+        ('assets/title_ambient.mp3', 'assets'),
+        ('assets/light_phase.mp3', 'assets'),
+        ('assets/gravity_phase.mp3', 'assets'),
+        ('assets/hyper_phase.mp3', 'assets'),
+        ('assets/mirror_phase.mp3', 'assets'),
+    ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,5 +41,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['game.ico'],
+    icon=['assets/game.ico'],
 )

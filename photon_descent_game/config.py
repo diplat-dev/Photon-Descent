@@ -78,10 +78,14 @@ COLOR_SWATCHES = [
 ]
 
 if getattr(sys, "frozen", False):
-    ASSET_DIR = sys._MEIPASS
+    base_asset_dir = sys._MEIPASS
 else:
     PACKAGE_DIR = os.path.dirname(os.path.abspath(__file__))
-    ASSET_DIR = os.path.dirname(PACKAGE_DIR)
+    base_asset_dir = os.path.dirname(PACKAGE_DIR)
+
+ASSET_DIR = os.path.join(base_asset_dir, "assets")
+if not os.path.isdir(ASSET_DIR):
+    ASSET_DIR = base_asset_dir
 
 LOCAL_APPDATA = os.environ.get("LOCALAPPDATA")
 if LOCAL_APPDATA:
