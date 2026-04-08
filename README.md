@@ -1,12 +1,11 @@
 # Photon Descent
 
-Photon Descent is a fast-paced `pygame` dodge-survival game built around rotating phase mechanics, reactive movement, and escalating bullet patterns.
+Photon Descent is a 2D `pygame` bullet-hell game built around rotating phase mechanics.
 
 ## Features
 
 - Four gameplay phases: `light`, `gravity`, `hyper`, and `mirror`
 - Permanent upgrades between phases and round-based active abilities
-- Resizable window support and fullscreen toggle with `F11` or `Alt+Enter`
 - Local persistence for high score, selected color, and volume
 - Optional PyInstaller build configuration for Windows packaging
 
